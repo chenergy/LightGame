@@ -30,7 +30,6 @@ public class LightBeam : MonoBehaviour
 
 
 	public void SetVelocity (Vector2 velocity) {
-		//this.velocity = velocity;
 		this.direction = velocity.normalized;
 		this.speed = velocity.magnitude;
 	}
