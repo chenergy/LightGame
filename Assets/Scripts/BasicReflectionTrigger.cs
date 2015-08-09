@@ -19,7 +19,7 @@ public class BasicReflectionTrigger : MonoBehaviour
 			//Vector3 newDirection = this.GetNewDirection (oldDirection, reflectionPlane);
 			Vector3 newDirection = Vector3.Reflect (oldDirection, this.transform.TransformDirection (this.normal));
 			//this.CreateBeam (other.transform.position, newDirection, oldSpeed);
-			GameManager.Instance.LightBeam.SetVelocity (new Vector2 (newDirection.x, newDirection.y) * oldSpeed);
+			lb.SetVelocity (new Vector2 (newDirection.x, newDirection.y) * oldSpeed);
 
 			//lb.enabled = false;
 			//lb.GetComponent <Collider>().enabled = false;
